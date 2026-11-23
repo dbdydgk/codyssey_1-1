@@ -14,3 +14,5 @@
 - [prompts/system_prompt_v3.txt](prompts/system_prompt_v3.txt): v3 (수식 표기 규칙 추가)
 
 강의 자료 원문(OCR 텍스트)은 교재 기반 자료라서 저장소에 올리지 않았다.
+
+5. [보너스 과제](docs/bonus.md): 프롬프트 배포(Gemini 스킬), 이미지 생성, Apps Script API 호출
