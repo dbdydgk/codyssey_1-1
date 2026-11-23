@@ -7,7 +7,7 @@
 - 실행 시점: 2026-11-23
 - 모델: Gemini 4 Hydrogen (사고 수준 낮음), 10턴 대화와 같은 설정
 - 스킬 이름: `요점-조교`
-- 요청 사항 칸: 요구사항 4에서 완성한 시스템 프롬프트 v1([prompts/system_prompt_v1.txt](../prompts/system_prompt_v1.txt))을 그대로 붙여 넣음
+- 요청 사항 칸: 요구사항 4에서 완성한 시스템 프롬프트 v1([prompts/system_prompt_v1.txt](prompts/system_prompt_v1.txt))을 그대로 붙여 넣음
 - 설명 칸: 이 스킬을 언제 쓸지 Gemini가 판단하는 데 쓰는 문장이다.
   ```
   데이터마이닝 강의 자료로 시험 대비 핵심 요약과 OX 퀴즈를 만들어 달라는 요청을 받았을 때 사용합니다. '4장 시험 대비 정리해 줘', '이 강의 자료로 요약이랑 퀴즈 만들어 줘', '[과목/회차] [요약 개수] [강의 자료] 템플릿으로 보낸 요청' 같은 프롬프트로 실행됩니다.
@@ -17,7 +17,7 @@
 제미나이 4 버전 업데이트 이후 Gem메뉴가 보이지 않아 이러한 방식으로 진행하였다.
 
 ### 배포한 화면
-스킬 편집 화면이다. 요청 사항 칸에 시스템 프롬프트 v1이 들어가 있다. 칸이 길어 앞부분만 찍었고, 전문은 [prompts/system_prompt_v1.txt](../prompts/system_prompt_v1.txt)와 같다.
+스킬 편집 화면이다. 요청 사항 칸에 시스템 프롬프트 v1이 들어가 있다. 칸이 길어 앞부분만 찍었고, 전문은 [prompts/system_prompt_v1.txt](prompts/system_prompt_v1.txt)와 같다.
 
 ![스킬 편집 화면](images/bonus1_skill_edit.png)
 
@@ -89,7 +89,7 @@ OX 퀴즈
 - 스킬(`요점-조교`)은 켜지 않은 새 채팅에서 실행
 
 ### 고른 응답
-[run-log.md](run-log.md)의 18턴 대화 중 **턴 4의 AI 응답**(핵심 개념 요약 5개 + OX 퀴즈 5문항)을 그대로 사용했다.
+[run-log.md](docs/run-log.md)의 18턴 대화 중 **턴 4의 AI 응답**(핵심 개념 요약 5개 + OX 퀴즈 5문항)을 그대로 사용했다.
 
 **응답을 고른 이유**
 이 응답을 고른 이유는 인포그래픽으로 만들면 이해하는데 도움이 될거라 생각했기 때문이다.
@@ -120,7 +120,7 @@ OX 퀴즈
 ## 보너스 3. Google Apps Script에서 LLM API 호출
 
 ### 호출한 프롬프트
-[system-design.md](system-design.md) 11장의 3번 **모델 비교용 공통 프롬프트 [카테고리: 텍스트 생성]**을 한 글자도 바꾸지 않고 코드의 `PROMPT`에 넣었다. 웹에서 같은 프롬프트를 넣은 결과([compare_gemini.md](compare_gemini.md))와 비교할 수 있어서 이 프롬프트를 골랐다.
+[system-design.md](docs/system-design.md) 11장의 3번 **모델 비교용 공통 프롬프트 [카테고리: 텍스트 생성]**을 한 글자도 바꾸지 않고 코드의 `PROMPT`에 넣었다. 웹에서 같은 프롬프트를 넣은 결과([compare_gemini.md](docs/compare_gemini.md))와 비교할 수 있어서 이 프롬프트를 골랐다.
 
 ### 키 발급과 입력 절차 (키 값은 적지 않음)
 1. Google AI Studio(aistudio.google.com)에 로그인해 **Get API key → API 키 만들기**를 눌렀다.
