@@ -120,7 +120,7 @@ OX 퀴즈
 ## 보너스 3. Google Apps Script에서 LLM API 호출
 
 ### 호출한 프롬프트
-[system-design.md](docs/system-design.md) 11장의 3번 **모델 비교용 공통 프롬프트 [카테고리: 텍스트 생성]**을 한 글자도 바꾸지 않고 코드의 `PROMPT`에 넣었다. 웹에서 같은 프롬프트를 넣은 결과([compare_gemini.md](docs/compare_gemini.md))와 비교할 수 있어서 이 프롬프트를 골랐다.
+[system-design.md](docs/system-design.md) 11장의 3번 **모델 비교용 공통 프롬프트 [카테고리: 텍스트 생성]**을 한 글자도 바꾸지 않고 코드의 `PROMPT`에 넣었다. 웹에서 같은 프롬프트를 넣은 결과([model-comparison.md 부록 B](docs/model-comparison.md#appendix-gemini-hydrogen))와 비교할 수 있어서 이 프롬프트를 골랐다.
 
 ### 키 발급과 입력 절차 (키 값은 적지 않음)
 1. Google AI Studio(aistudio.google.com)에 로그인해 **Get API key → API 키 만들기**를 눌렀다.
