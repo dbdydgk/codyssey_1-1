@@ -218,7 +218,7 @@ f(x, y) = x^2 + yx + a일 때 ∂f/∂x = 2x + y
 ## 7. Zero-shot과 Few-shot 비교, 단계적 추론 유도 추가 여부
 
 ### Zero-shot 결과
-모델 비교 때 Gemini 4 Hydrogen에 시스템 프롬프트와 예시 없이 비교용 프롬프트만 넣은 결과다 ([compare_gemini.md](compare_gemini.md)).
+모델 비교 때 Gemini 4 Hydrogen에 시스템 프롬프트와 예시 없이 비교용 프롬프트만 넣은 결과다 ([model-comparison.md 부록 B](model-comparison.md#appendix-gemini-hydrogen)).
 - 사실 오류는 없고 출처 번호도 모두 맞았다.
 - 볼드 강조가 전혀 없었다.
 - 요약을 긴 한 문장으로 써서(평균 약 157자) 외우기 어려웠다.
